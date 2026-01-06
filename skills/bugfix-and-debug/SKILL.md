@@ -1,13 +1,21 @@
 ---
 name: bugfix-and-debug
 description: |
-  Diagnose errors and failing tests in Laravel + React applications. Use when encountering bugs, exceptions,
-  stack traces, 500 errors, TypeErrors, failing Pest/Vitest tests, or unexpected behavior. EXCLUSIVE to debugger agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob
+  Diagnose errors and failing tests in Laravel + React + Python applications. Use when encountering bugs, exceptions,
+  stack traces, 500 errors, TypeErrors, failing tests, or unexpected behavior. EXCLUSIVE to debugger agent.
+allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_context7
 ---
 # Bugfix and Debug
 
 **Exclusive to:** `debugger` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Lookup error patterns and fixes in official docs:
+```
+mcp_context7_resolve-library-id(libraryName="[library]", query="[error type]")
+mcp_context7_query-docs(libraryId="/[resolved-id]", query="[specific error message]")
+```
 
 ## Validation Loop (MANDATORY)
 

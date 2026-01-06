@@ -53,6 +53,37 @@ This config provides a coordinated agent system for development tasks. It routes
 | **devops-engineer** | Sonnet | Infrastructure | deploy, docker, CI/CD |
 | **brainstormer** | Sonnet | Technical Advising | brainstorm, options, pros/cons |
 
+## MCP Helpers (Brain + Memory)
+
+The following agents use MCP tools for enhanced capabilities:
+
+| Agent | MCP Tools | Purpose |
+|-------|-----------|---------|
+| **planner** | codex-bridge, context7 | Architecture analysis, up-to-date docs |
+| **researcher** | codex-bridge, context7 | Deep research, library documentation |
+| **brainstormer** | codex-bridge, context7 | Creative reasoning, best practices lookup |
+| **fullstack-developer** | context7 | Latest API docs during implementation |
+| **database-admin** | context7 | ORM patterns, migration docs |
+| **ui-ux-designer** | context7 | Component docs, accessibility guidelines |
+| **debugger** | context7 | Error patterns, fixes from official docs |
+| **testing-expert** | context7 | Testing framework patterns, assertions |
+| **reviewer** | context7 | Best practices validation |
+| **security-expert** | context7 | Security patterns, vulnerability fixes |
+| **devops-engineer** | context7 | Deployment configs, Docker patterns |
+
+### 🧠 Codex-Bridge (Brain)
+Deep reasoning and analysis for complex decisions:
+```
+mcp_codex-bridge_consult_codex(query="...", directory=".")
+```
+
+### 📚 Context7 (Memory)
+Up-to-date library documentation:
+```
+mcp_context7_resolve-library-id(libraryName="react", query="...")
+mcp_context7_query-docs(libraryId="/vercel/react", query="...")
+```
+
 ## File Structure
 
 ```
@@ -187,7 +218,9 @@ npm run lint                 # ESLint
 
 # Python
 python -m pytest             # Tests
+pytest --asyncio-mode=auto   # Async tests
 ruff check .                 # Lint
+ruff format .                # Format
 mypy .                       # Type check
 ```
 
@@ -281,10 +314,22 @@ Create `skills/new-skill/SKILL.md` and `reference.md`.
 ## Tech Stack Target
 
 Designed for but not limited to:
+
+**PHP/Laravel Stack:**
 - **Backend**: Laravel 12, PHP 8.3+
 - **Frontend**: React 19, Inertia.js, TypeScript 5.x, Tailwind CSS 4
-- **Testing**: Pest (PHP), pytest (Python)
-- **Python**: FastAPI, LangChain, LangGraph
+- **Testing**: Pest (PHP)
+
+**Python Stack:**
+- **Backend**: FastAPI, Python 3.11+
+- **AI/ML**: LangChain, LangGraph, OpenAI, Anthropic
+- **Data**: Pydantic, SQLAlchemy
+- **Testing**: pytest, pytest-asyncio
+
+**JavaScript/Node Stack:**
+- **Runtime**: Node.js 20+
+- **Frontend**: React 19, Next.js, TypeScript
+- **Testing**: Jest, Vitest
 
 ## License
 

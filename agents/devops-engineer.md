@@ -5,7 +5,7 @@ description: |
   Triggers: "deploy", "Docker", "CI/CD", "server", "nginx", "hardening", "firewall", "production", "ssl", "GitHub Actions", "environment", "hosting".
   Use when: Deployment configuration, Docker setup, CI/CD pipelines, server hardening, or infrastructure changes needed.
   Do NOT use for: Application code (use fullstack-developer), database schema (use database-admin), security audits (use security-expert).
-tools: Read, Grep, Glob, Edit, Write, Bash
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_context7
 model: sonnet
 permissionMode: acceptEdits
 skills: devops-infrastructure

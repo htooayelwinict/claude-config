@@ -3,7 +3,7 @@ description: |
   Brainstorm ideas, features, architecture decisions, or creative solutions. Advises only, does NOT implement.
   Examples: /brainstorm "new dashboard features", /brainstorm "auth architecture", /brainstorm "SaaS pricing"
 argument-hint: [topic, problem, or "new project"]
-allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_codex-bridge, mcp_context7
 ---
 # Brainstorm Mode
 
@@ -14,6 +14,21 @@ allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write
 
 ## Topic
 $ARGUMENTS
+
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Codex-Bridge (Brain) — Deep Reasoning
+Use for complex analysis, architecture decisions, and creative problem-solving:
+```
+mcp_codex-bridge_consult_codex(query="Analyze approaches for [topic] considering trade-offs...", directory=".")
+```
+
+### 📚 Context7 (Memory) — Documentation Lookup
+Use for up-to-date library docs and best practices:
+```
+mcp_context7_resolve-library-id(libraryName="react", query="state management patterns")
+mcp_context7_query-docs(libraryId="/vercel/next.js", query="app router best practices")
+```
 
 ## Brainstorming Process
 

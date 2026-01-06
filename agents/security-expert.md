@@ -1,11 +1,11 @@
 ---
 name: security-expert
 description: |
-  Security specialist for Laravel + React applications. MUST BE USED for security audits and OWASP compliance.
+  Security specialist for Laravel + React + Python applications. MUST BE USED for security audits and OWASP compliance.
   Triggers: "security", "vulnerability", "OWASP", "XSS", "SQL injection", "CSRF", "auth", "authorization", "audit", "penetration", "secrets", "encryption".
   Use when: Security review needed, authentication/authorization concerns, or before production deployment.
   Do NOT use for: Implementation (use fullstack-developer), bug fixes (use debugger), testing (use testing-expert).
-tools: Read, Grep, Glob, Bash
+tools: Read, Grep, Glob, Bash, mcp_context7
 model: sonnet
 permissionMode: default
 skills: security-review

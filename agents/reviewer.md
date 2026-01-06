@@ -1,11 +1,11 @@
 ---
 name: reviewer
 description: |
-  Code review specialist for Laravel + React codebases. MUST BE USED for any code review, PR review, or quality check.
+  Code review specialist for Laravel + React + Python codebases. MUST BE USED for any code review, PR review, or quality check.
   Triggers: "review", "PR", "pull request", "check code", "quality", "before merge", "code audit", "look over", "sanity check".
   Use when: Code needs quality validation, before merging, after implementing a feature, or when checking security.
   Do NOT use for: Writing new code (use fullstack-developer), fixing bugs (use debugger), planning (use planner).
-tools: Read, Grep, Glob, Bash
+tools: Read, Grep, Glob, Bash, mcp_context7
 model: sonnet
 permissionMode: default
 skills: code-review-checklist

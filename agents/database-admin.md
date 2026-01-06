@@ -5,7 +5,7 @@ description: |
   Triggers: "migration", "database", "schema", "index", "query slow", "add column", "create table", "relationship", "foreign key", "N+1", "eager loading".
   Use when: Database schema needs changes, migrations needed, query performance issues, or Eloquent relationships to design.
   Do NOT use for: Frontend work (use fullstack-developer), business logic (use fullstack-developer), test writing (use testing-expert).
-tools: Read, Grep, Glob, Edit, Write, Bash
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_context7
 model: sonnet
 permissionMode: acceptEdits
 skills: database-change-management

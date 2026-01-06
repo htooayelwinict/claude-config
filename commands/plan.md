@@ -3,7 +3,7 @@ description: |
   Create a structured implementation plan with research and phases.
   Examples: /plan user-authentication, /plan "add comments feature", /plan dashboard-redesign
 argument-hint: <feature-name>
-allowed-tools: Read, Edit, Bash, Write
+allowed-tools: Read, Edit, Bash, Write, mcp_codex-bridge, mcp_context7
 ---
 # Plan Command
 
@@ -43,6 +43,22 @@ Example: `user-authentication-20241214-153042`
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 PLAN_NAME="$1-${TIMESTAMP}"
 mkdir -p "plan/${PLAN_NAME}/research" "plan/${PLAN_NAME}/phases"
+```
+
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Codex-Bridge (Brain) — Architecture Analysis
+```
+mcp_codex-bridge_consult_codex(
+  query="Analyze architecture for [feature]: requirements, patterns, risks, phases...",
+  directory="."
+)
+```
+
+### 📚 Context7 (Memory) — Documentation Lookup
+```
+mcp_context7_resolve-library-id(libraryName="laravel", query="[feature] implementation")
+mcp_context7_query-docs(libraryId="/laravel/docs", query="[specific topic]")
 ```
 
 ## Step 2: Research Phase

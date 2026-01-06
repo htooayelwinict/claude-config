@@ -1,11 +1,19 @@
 ---
 name: devops-infrastructure
 description: Manage deployment, Docker, CI/CD, server hardening, and infrastructure security. EXCLUSIVE to devops-engineer agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
 ---
 # DevOps Infrastructure
 
 **Exclusive to:** `devops-engineer` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Lookup latest deployment patterns and configs:
+```
+mcp_context7_resolve-library-id(libraryName="docker", query="multi-stage build")
+mcp_context7_query-docs(libraryId="/docker/docs", query="compose healthcheck")
+```
 
 ## Instructions
 

@@ -15,7 +15,9 @@
       "Bash(npm run lint:*)",
       "Bash(python3:*)",
       "Bash(gh issue close:*)",
-      "Bash(gh issue list:*)"
+      "Bash(gh issue list:*)",
+      "Bash(npm run test:*)",
+      "Bash(npm run test:run:*)"
     ]
   }
 }

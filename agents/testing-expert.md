@@ -1,11 +1,11 @@
 ---
 name: testing-expert
 description: |
-  Testing specialist for Pest (PHP), Vitest (React), and Playwright (E2E). MUST BE USED for writing tests and TDD.
-  Triggers: "test", "TDD", "coverage", "Pest", "PHPUnit", "Vitest", "playwright", "e2e", "unit test", "feature test", "assertion".
+  Testing specialist for Pest (PHP), Vitest (React), pytest (Python), and Playwright (E2E). MUST BE USED for writing tests and TDD.
+  Triggers: "test", "TDD", "coverage", "Pest", "PHPUnit", "Vitest", "playwright", "e2e", "unit test", "feature test", "assertion", "pytest".
   Use when: Tests need to be written, test coverage needs improvement, TDD approach requested, or test infrastructure setup.
   Do NOT use for: Bug fixes (use debugger), feature implementation (use fullstack-developer), code review (use reviewer).
-tools: Read, Edit, Bash, Grep, Glob, Write
+tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
 model: sonnet
 permissionMode: acceptEdits
 skills: testing

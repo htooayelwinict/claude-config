@@ -3,7 +3,7 @@ description: |
   Implement code based on a generated plan. Execute phases in order with verification.
   Examples: /code plan/user-auth-20241214, /code plan/comments --phase 1
 argument-hint: <plan-folder-path> [--phase <N>]
-allowed-tools: Read, Edit, Bash, WebFetch, Write, Grep, Glob
+allowed-tools: Read, Edit, Bash, WebFetch, Write, Grep, Glob, mcp_context7
 ---
 # Code Command
 
@@ -13,6 +13,14 @@ allowed-tools: Read, Edit, Bash, WebFetch, Write, Grep, Glob
 > Read plan.md first, then execute each phase with verification. Update phase status after completion.
 
 Implement plan: **$ARGUMENTS**
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Before implementing, lookup latest documentation for unfamiliar APIs:
+```
+mcp_context7_resolve-library-id(libraryName="[library]", query="[feature]")
+mcp_context7_query-docs(libraryId="/[resolved-id]", query="[specific API or pattern]")
+```
 
 ## Purpose
 

@@ -1,7 +1,11 @@
 ---
 name: debugger
 description: |
-tools: Read, Grep, Glob, Edit, Write, Bash
+  Debugging specialist for diagnosing and fixing bugs. MUST BE USED for any bug fix or error investigation.
+  Triggers: "bug", "error", "fix", "debug", "broken", "not working", "issue", "crash", "exception".
+  Use when: Something is broken and needs to be fixed, error investigation, or root cause analysis.
+  Do NOT use for: New features (use fullstack-developer), planning (use planner), testing (use testing-expert).
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_context7
 model: inherit
 ---
 

@@ -1,13 +1,28 @@
 ---
 name: brainstorming
-description: Brainstorm and advise on technical decisions using structured process. EXCLUSIVE to brainstormer agent. Does NOT implement — only advises.
-allowed-tools: Read, Grep, Glob, Bash, WebFetch
+description: Brainstorm and advise on technical decisions using structured process and MCP helpers. EXCLUSIVE to brainstormer agent. Does NOT implement — only advises.
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_codex-bridge, mcp_context7
 ---
 # Brainstorming
 
 **Exclusive to:** `brainstormer` agent
 
 > ⚠️ **CRITICAL**: This skill is for brainstorming and advising ONLY. Do NOT implement solutions.
+
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Codex-Bridge (Brain)
+Use for deep reasoning, architecture analysis, and creative problem-solving:
+```
+mcp_codex-bridge_consult_codex(query="Analyze trade-offs for [topic]...", directory=".")
+```
+
+### 📚 Context7 (Memory)
+Use for up-to-date library docs and best practices:
+```
+mcp_context7_resolve-library-id(libraryName="[lib]", query="[topic]")
+mcp_context7_query-docs(libraryId="/[id]", query="[specific question]")
+```
 
 ## Instructions
 

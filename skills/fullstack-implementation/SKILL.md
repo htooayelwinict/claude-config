@@ -1,13 +1,27 @@
 ---
 name: fullstack-implementation
 description: |
-  Implement features end-to-end in Laravel 12 + Inertia.js + React 19 + TypeScript. Use when building
+  Implement features end-to-end in Laravel 12 + Inertia.js + React 19 + TypeScript OR Python + FastAPI + LangChain. Use when building
   new features, wiring controllers to pages, or implementing CRUD operations. EXCLUSIVE to fullstack-developer agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
 ---
 # Fullstack Implementation
 
 **Exclusive to:** `fullstack-developer` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Before implementing unfamiliar APIs, lookup the latest documentation:
+```
+mcp_context7_resolve-library-id(libraryName="[library]", query="[feature]")
+mcp_context7_query-docs(libraryId="/[resolved-id]", query="[specific API]")
+```
+
+**Common lookups:**
+- React hooks, Server Components, Suspense
+- Laravel Eloquent, Inertia responses
+- FastAPI dependencies, Pydantic models
+- LangChain chains, agents, tools
 
 ## Validation Loop (MANDATORY)
 

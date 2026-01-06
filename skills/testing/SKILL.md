@@ -1,13 +1,21 @@
 ---
 name: testing
 description: |
-  Write and manage tests using TDD with Pest (PHP), Vitest (React), and Playwright (E2E). Use when writing
+  Write and manage tests using TDD with Pest (PHP), Vitest (React), pytest (Python), and Playwright (E2E). Use when writing
   feature tests, unit tests, component tests, or improving test coverage. EXCLUSIVE to testing-expert agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
 ---
 # Testing
 
 **Exclusive to:** `testing-expert` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Lookup testing patterns and assertions:
+```
+mcp_context7_resolve-library-id(libraryName="pytest", query="fixtures async")
+mcp_context7_query-docs(libraryId="/pytest-dev/pytest", query="parametrize examples")
+```
 
 ## Validation Loop (MANDATORY)
 

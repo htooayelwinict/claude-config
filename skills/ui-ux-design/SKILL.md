@@ -1,11 +1,19 @@
 ---
 name: ui-ux-design
 description: Design and implement UI/UX changes using existing components and Tailwind tokens; ensure accessibility. EXCLUSIVE to ui-ux-designer agent.
-allowed-tools: Read, Edit, Grep, Glob, Write
+allowed-tools: Read, Edit, Grep, Glob, Write, mcp_context7
 ---
 # UI/UX Design
 
 **Exclusive to:** `ui-ux-designer` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Lookup latest component patterns and accessibility guidelines:
+```
+mcp_context7_resolve-library-id(libraryName="shadcn-ui", query="dialog modal")
+mcp_context7_query-docs(libraryId="/shadcn-ui/ui", query="accessible form patterns")
+```
 
 ## Instructions
 

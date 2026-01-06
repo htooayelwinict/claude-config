@@ -3,11 +3,19 @@ name: security-review
 description: |
   Audit code for security vulnerabilities using OWASP Top 10 guidelines. Use for security audits, pre-deployment
   checks, authentication reviews, or when checking for XSS, SQL injection, CSRF, or authorization issues. EXCLUSIVE to security-expert agent.
-allowed-tools: Read, Grep, Glob, Bash
+allowed-tools: Read, Grep, Glob, Bash, mcp_context7
 ---
 # Security Review
 
 **Exclusive to:** `security-expert` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Lookup security patterns and vulnerability mitigations:
+```
+mcp_context7_resolve-library-id(libraryName="laravel", query="csrf protection")
+mcp_context7_query-docs(libraryId="/laravel/docs", query="authentication security")
+```
 
 ## Validation Loop (MANDATORY)
 

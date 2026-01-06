@@ -1,7 +1,7 @@
 ---
-description: Research a topic using Codex CLI and save to plan's research folder
+description: Research a topic using Codex CLI/MCP and save to plan's research folder
 argument-hint: <topic> [--plan <plan-folder>]
-allowed-tools: Read, Bash, WebFetch
+allowed-tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_context7
 ---
 # Research Command
 
@@ -35,26 +35,43 @@ If `--plan` flag provided:
 If no plan specified:
 - Save to `plan/research-[topic]-[timestamp]/`
 
-## Step 2: Use Codex CLI for Research
+## Step 2: Use MCP Helpers for Research
 
-```bash
-# Research using Codex CLI
-codex "Research the following topic for a Laravel 12 + React 19 + Inertia.js project:
-
-Topic: $ARGUMENTS
-
-Provide:
-1. Overview and key concepts
-2. Best practices and patterns
-3. Security considerations
-4. Implementation approaches
-5. Code examples (Laravel/React where applicable)
-6. Common pitfalls to avoid
-7. Recommended packages/libraries
-8. Official documentation links
-
-Format as structured markdown."
+### 🧠 Codex-Bridge (Brain) — Deep Analysis
 ```
+mcp_codex-bridge_consult_codex(
+  query="Research the following topic for a Laravel 12 + React 19 + Inertia.js OR Python/FastAPI/LangChain project:
+
+  Topic: $ARGUMENTS
+
+  Provide:
+  1. Overview and key concepts
+  2. Best practices and patterns
+  3. Security considerations
+  4. Implementation approaches
+  5. Code examples (Laravel/React/Python where applicable)
+  6. Common pitfalls to avoid
+  7. Recommended packages/libraries
+  8. Official documentation links
+
+  Format as structured markdown.",
+  directory="."
+)
+```
+
+### 📚 Context7 (Memory) — Up-to-Date Docs
+```
+# First resolve the library ID
+mcp_context7_resolve-library-id(libraryName="[library-name]", query="$ARGUMENTS")
+
+# Then query the docs
+mcp_context7_query-docs(libraryId="/[resolved-id]", query="$ARGUMENTS")
+```
+
+### Supported Stacks
+- **PHP/Laravel**: Laravel 12, Pest, Inertia.js
+- **JavaScript/React**: React 19, TypeScript, Tailwind, shadcn/ui
+- **Python**: FastAPI, LangChain, LangGraph, pytest, Pydantic
 
 ## Step 3: Save Research Output
 
@@ -122,23 +139,33 @@ Create research file with timestamp:
 
 ## Step 4: Additional Research Sources
 
-After Codex research, supplement with:
+After MCP research, supplement with:
 
 1. **Codebase Analysis**
    ```bash
-   # Find similar implementations
+   # Find similar implementations (PHP/Laravel)
    grep -r "related_pattern" --include="*.php" app/
    grep -r "related_pattern" --include="*.tsx" resources/js/
+   
+   # Find similar implementations (Python)
+   grep -r "related_pattern" --include="*.py" src/
    ```
 
 2. **Package Documentation**
-   - Check `composer.json` for installed packages
-   - Review package docs on Packagist/GitHub
+   - PHP: Check `composer.json`, review docs on Packagist/GitHub
+   - Node: Check `package.json`, review npm/GitHub
+   - Python: Check `pyproject.toml` or `requirements.txt`, review PyPI/GitHub
 
-3. **Laravel/React Official Docs**
+3. **Official Docs**
+   **PHP/Laravel Stack:**
    - Laravel: https://laravel.com/docs
    - React: https://react.dev
    - Inertia: https://inertiajs.com
+   
+   **Python Stack:**
+   - FastAPI: https://fastapi.tiangolo.com
+   - LangChain: https://python.langchain.com
+   - LangGraph: https://langchain-ai.github.io/langgraph
 
 ## Step 5: Output Summary
 
@@ -164,14 +191,50 @@ After Codex research, supplement with:
 
 ## Research Templates
 
-### Feature Research
-```bash
-codex "How to implement [feature] in Laravel 12 with React frontend using Inertia.js? Include security considerations and testing approach."
+### Feature Research (PHP/Laravel)
+```
+mcp_codex-bridge_consult_codex(
+  query="How to implement [feature] in Laravel 12 with React frontend using Inertia.js? Include security considerations and testing approach.",
+  directory="."
+)
+```
+
+### Feature Research (Python)
+```
+mcp_codex-bridge_consult_codex(
+  query="How to implement [feature] in FastAPI/LangChain? Include Pydantic models, async patterns, and pytest testing approach.",
+  directory="."
+)
+```
+
+### Library Docs Lookup
+```
+mcp_context7_resolve-library-id(libraryName="langchain", query="[feature] implementation")
+mcp_context7_query-docs(libraryId="/langchain-ai/langchain", query="[specific topic]")
 ```
 
 ### Package Evaluation
-```bash
-codex "Compare [package1] vs [package2] for [use-case] in Laravel. Include pros, cons, and recommendation."
+```
+mcp_codex-bridge_consult_codex(
+  query="Compare [package1] vs [package2] for [use-case]. Include pros, cons, and recommendation.",
+  directory="."
+)
+```
+
+### Security Research
+```
+mcp_codex-bridge_consult_codex(
+  query="Security best practices for [feature] in web applications. Focus on [Laravel/FastAPI] backend and [React/Vue] frontend.",
+  directory="."
+)
+```
+
+### Performance Research
+```
+mcp_codex-bridge_consult_codex(
+  query="Performance optimization for [feature]. Include caching strategies, async patterns, and database optimization.",
+  directory="."
+)
 ```
 
 ### Security Research

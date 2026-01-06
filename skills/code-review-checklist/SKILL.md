@@ -2,12 +2,20 @@
 name: code-review-checklist
 description: |
   Review code changes for correctness, security, performance, and maintainability. Use for PR reviews,
-  code audits, pre-merge checks, or quality validation of Laravel + React code. EXCLUSIVE to reviewer agent.
-allowed-tools: Read, Grep, Glob, Bash
+  code audits, pre-merge checks, or quality validation of Laravel + React + Python code. EXCLUSIVE to reviewer agent.
+allowed-tools: Read, Grep, Glob, Bash, mcp_context7
 ---
 # Code Review Checklist
 
 **Exclusive to:** `reviewer` agent
+
+## 📚 Context7 (Memory) — Up-to-Date Docs
+
+Lookup best practices and anti-patterns:
+```
+mcp_context7_resolve-library-id(libraryName="[library]", query="best practices")
+mcp_context7_query-docs(libraryId="/[resolved-id]", query="[specific pattern to validate]")
+```
 
 ## Validation Loop (MANDATORY)
 

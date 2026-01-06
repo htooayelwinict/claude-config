@@ -1,11 +1,32 @@
 ---
 name: project-planning
-description: Create clear, step-by-step implementation plans with acceptance criteria. EXCLUSIVE to planner agent.
-allowed-tools: Read, Grep, Glob, Bash
+description: Create clear, step-by-step implementation plans with acceptance criteria using MCP helpers. EXCLUSIVE to planner agent.
+allowed-tools: Read, Grep, Glob, Bash, mcp_codex-bridge, mcp_context7
 ---
 # Project Planning
 
 **Exclusive to:** `planner` agent
+
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Codex-Bridge (Brain) — Architecture Analysis
+```
+mcp_codex-bridge_consult_codex(
+  query="Design architecture for [feature]: phases, risks, dependencies...",
+  directory="."
+)
+```
+
+### 📚 Context7 (Memory) — Documentation Lookup
+```
+mcp_context7_resolve-library-id(libraryName="laravel", query="[feature]")
+mcp_context7_query-docs(libraryId="/laravel/docs", query="[specific pattern]")
+```
+
+## Supported Stacks
+
+**PHP/Laravel:** Laravel 12, Inertia.js, React 19, TypeScript, Tailwind
+**Python:** FastAPI, LangChain, LangGraph, Pydantic, pytest
 
 ## Instructions
 

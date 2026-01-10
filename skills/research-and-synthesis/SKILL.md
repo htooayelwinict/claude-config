@@ -1,13 +1,13 @@
 ---
 name: research-and-synthesis
 description: Fetch and summarize authoritative external sources into actionable guidance using MCP helpers. EXCLUSIVE to researcher agent.
-allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 ---
 # Research and Synthesis
 
 **Exclusive to:** `researcher` agent
 
-## MCP Helpers (Brain + Memory)
+## MCP Helpers (Brain + Memory + Web)
 
 ### 🧠 Codex-Bridge (Brain) — Deep Analysis
 ```
@@ -24,6 +24,25 @@ mcp_context7_resolve-library-id(libraryName="fastapi", query="dependency injecti
 
 # Then query
 mcp_context7_query-docs(libraryId="/tiangolo/fastapi", query="Depends pattern")
+```
+
+### 🌐 Web Search Tools — Live Research
+```
+# Discover relevant content
+mcp_web-search-prime_search(query="[topic] best practices 2025")
+
+# Read full articles
+mcp_web-reader_read(url="https://discovered-url.com/article")
+
+# Smart content extraction
+mcp_zread_read(url="https://docs-page.com")
+```
+
+**Research Flow:**
+1. Search with web-search-prime to find sources
+2. Read promising articles with web-reader or zread
+3. Verify with Context7 official docs
+4. Synthesize with Codex-Bridge
 ```
 
 ## Instructions

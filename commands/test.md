@@ -3,7 +3,7 @@ description: |
   Run, write, and fix tests using TDD approach with Pest/Vitest/Playwright.
   Examples: /test, /test PostTest, /test "all", /test "coverage"
 argument-hint: [test file, pattern, or "all"]
-allowed-tools: Read, Edit, Bash, Grep, Glob
+allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_playwright, mcp_zai-mcp-server
 ---
 # Test Mode
 
@@ -14,6 +14,27 @@ allowed-tools: Read, Edit, Bash, Grep, Glob
 
 ## Target
 $ARGUMENTS
+
+## 🖼️ Visual Testing (Web Apps)
+
+For UI/UX testing, use Playwright MCP to capture screenshots and Vision AI to analyze:
+
+### Step 1: Navigate and Capture
+```
+mcp_playwright_browser_navigate(url="http://localhost:8000/page")
+mcp_playwright_browser_snapshot()  # Get accessibility tree
+mcp_playwright_browser_take_screenshot(filename="current-state.png")
+```
+
+### Step 2: Analyze with Vision AI
+```
+mcp_zai-mcp-server_analyze_image(image_path="current-state.png", prompt="Analyze this UI for...")
+```
+
+### Step 3: Visual Regression
+- Compare screenshots before/after changes
+- Verify layout, colors, spacing match design
+- Check responsive behavior at different viewports
 
 ## TDD Workflow
 

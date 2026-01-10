@@ -1,7 +1,7 @@
 ---
 description: ⚡⚡⚡⚡ Analyze the codebase and create/update documentation
 argument-hint: <init|update|summarize> [target]
-allowed-tools: Read, Edit, Bash
+allowed-tools: Read, Edit, Bash, mcp_context7
 ---
 # Documentation Command
 

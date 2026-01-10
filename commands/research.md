@@ -1,7 +1,7 @@
 ---
 description: Research a topic using Codex CLI/MCP and save to plan's research folder
 argument-hint: <topic> [--plan <plan-folder>]
-allowed-tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 ---
 # Research Command
 

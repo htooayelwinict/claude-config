@@ -1,7 +1,7 @@
 ---
 name: ui-ux-design
 description: Design and implement UI/UX changes using existing components and Tailwind tokens; ensure accessibility. EXCLUSIVE to ui-ux-designer agent.
-allowed-tools: Read, Edit, Grep, Glob, Write, mcp_context7
+allowed-tools: Read, Edit, Grep, Glob, Write, mcp_context7, mcp_playwright, mcp_zai-mcp-server
 ---
 # UI/UX Design
 
@@ -13,6 +13,28 @@ Lookup latest component patterns and accessibility guidelines:
 ```
 mcp_context7_resolve-library-id(libraryName="shadcn-ui", query="dialog modal")
 mcp_context7_query-docs(libraryId="/shadcn-ui/ui", query="accessible form patterns")
+```
+
+## 🖼️ Visual Verification (Web Apps)
+
+After UI implementation, capture and analyze:
+
+### Screenshot & Analyze
+```
+mcp_playwright_browser_navigate(url="http://localhost:8000/[page]")
+mcp_playwright_browser_take_screenshot(filename="ui-check.png")
+
+mcp_zai-mcp-server_analyze_image(
+  image_path="ui-check.png",
+  prompt="Check this UI for: design consistency, spacing, alignment, accessibility"
+)
+```
+
+### Responsive Verification
+```
+mcp_playwright_browser_resize(width=375, height=812)   # Mobile
+mcp_playwright_browser_resize(width=768, height=1024)  # Tablet  
+mcp_playwright_browser_resize(width=1920, height=1080) # Desktop
 ```
 
 ## Instructions

@@ -17,7 +17,17 @@
       "Bash(gh issue close:*)",
       "Bash(gh issue list:*)",
       "Bash(npm run test:*)",
-      "Bash(npm run test:run:*)"
+      "Bash(npm run test:run:*)",
+      "mcp__zai-mcp-server__analyze_image",
+      "mcp__playwright__browser_drag",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_press_key",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Skill(project-planning)",
+      "Skill(project-planning:*)",
+      "Skill(plan)",
+      "Skill(plan:*)"
     ]
   }
 }

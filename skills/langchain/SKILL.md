@@ -1,11 +1,20 @@
 ---
 name: langchain
 description: Expert guidance for building LLM applications with LangChain framework - chains, prompts, memory, retrievers, and integrations.
+allowed-tools: Read, Edit, Bash, Grep, mcp_context7
 ---
 
 # LangChain Skill
 
 Use this skill when working with LangChain for building LLM-powered applications.
+
+## 📚 Documentation Lookup (Context7)
+
+Always verify patterns with latest docs:
+```
+mcp_context7_resolve-library-id(libraryName="langchain", query="LCEL chains")
+mcp_context7_query-docs(libraryId="/langchain-ai/langchain", query="RunnablePassthrough examples")
+```
 
 ## Core Concepts
 

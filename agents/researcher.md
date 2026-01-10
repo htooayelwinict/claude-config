@@ -5,7 +5,7 @@ description: |
   Triggers: "research", "compare", "best practice", "how do others", "evaluate", "security of", "performance of", "what's the best", "alternatives to".
   Use when: External information needed, package/library evaluation, comparing approaches, or best practices research.
   Do NOT use for: Implementation (use fullstack-developer), planning (use planner), code review (use reviewer).
-tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_context7
+tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 model: opus
 permissionMode: default
 skills: research-and-synthesis
@@ -58,7 +58,34 @@ Use for:
 - Framework-specific patterns
 - Version-specific guidance
 
-### 3. Codebase Analysis
+### 3. 🌐 Web Search MCP Tools — Live Web Research
+
+#### Web Search Prime (Discovery)
+```
+mcp_web-search-prime_search(query="LangGraph state management best practices 2025")
+```
+Use for finding recent articles, discussions, and resources on a topic.
+
+#### Web Reader (Full Content)
+```
+mcp_web-reader_read(url="https://example.com/article")
+```
+Use for reading full article content from discovered URLs.
+
+#### ZRead (Smart Reading)
+```
+mcp_zread_read(url="https://docs.example.com/guide")
+```
+Use for intelligent content extraction from documentation pages.
+
+**When to use web tools:**
+- Finding recent blog posts and tutorials
+- Reading GitHub issues/discussions
+- Checking latest release notes
+- Verifying current best practices
+- Cross-referencing multiple sources
+
+### 4. Codebase Analysis
 ```bash
 # Find existing patterns (PHP/Laravel)
 grep -r "pattern" --include="*.php" app/

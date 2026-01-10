@@ -64,9 +64,9 @@ The following agents use MCP tools for enhanced capabilities:
 | **brainstormer** | codex-bridge, context7 | Creative reasoning, best practices lookup |
 | **fullstack-developer** | context7 | Latest API docs during implementation |
 | **database-admin** | context7 | ORM patterns, migration docs |
-| **ui-ux-designer** | context7 | Component docs, accessibility guidelines |
+| **ui-ux-designer** | context7, playwright, zai-mcp-server | Component docs, visual verification |
 | **debugger** | context7 | Error patterns, fixes from official docs |
-| **testing-expert** | context7 | Testing framework patterns, assertions |
+| **testing-expert** | context7, playwright, zai-mcp-server | Testing patterns, visual regression |
 | **reviewer** | context7 | Best practices validation |
 | **security-expert** | context7 | Security patterns, vulnerability fixes |
 | **devops-engineer** | context7 | Deployment configs, Docker patterns |
@@ -78,6 +78,19 @@ mcp_codex-bridge_consult_codex(query="...", directory=".")
 ```
 
 ### 📚 Context7 (Memory)
+Up-to-date library documentation:
+```
+mcp_context7_resolve-library-id(libraryName="react", query="...")
+mcp_context7_query-docs(libraryId="/vercel/react", query="...")
+```
+
+### 🖼️ Playwright + Vision AI (Visual Testing)
+For web apps, capture screenshots and analyze UI:
+```
+mcp_playwright_browser_navigate(url="http://localhost:8000/page")
+mcp_playwright_browser_take_screenshot(filename="screenshot.png")
+mcp_zai-mcp-server_analyze_image(image_path="screenshot.png", prompt="Analyze UI...")
+```
 Up-to-date library documentation:
 ```
 mcp_context7_resolve-library-id(libraryName="react", query="...")

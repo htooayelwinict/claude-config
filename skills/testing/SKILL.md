@@ -2,8 +2,8 @@
 name: testing
 description: |
   Write and manage tests using TDD with Pest (PHP), Vitest (React), pytest (Python), and Playwright (E2E). Use when writing
-  feature tests, unit tests, component tests, or improving test coverage. EXCLUSIVE to testing-expert agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
+  feature tests, unit tests, component tests, visual regression tests, or improving test coverage. EXCLUSIVE to testing-expert agent.
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7, mcp_playwright, mcp_zai-mcp-server
 ---
 # Testing
 
@@ -16,6 +16,30 @@ Lookup testing patterns and assertions:
 mcp_context7_resolve-library-id(libraryName="pytest", query="fixtures async")
 mcp_context7_query-docs(libraryId="/pytest-dev/pytest", query="parametrize examples")
 ```
+
+## 🖼️ Visual Testing (Web Apps)
+
+For UI/UX testing, use Playwright MCP to capture and Vision AI to analyze:
+
+### Capture Screenshots
+```
+mcp_playwright_browser_navigate(url="http://localhost:8000/[page]")
+mcp_playwright_browser_take_screenshot(filename="test-screenshot.png")
+```
+
+### Analyze with Vision AI
+```
+mcp_zai-mcp-server_analyze_image(
+  image_path="test-screenshot.png",
+  prompt="Analyze this UI: check layout, colors, spacing, alignment, accessibility issues"
+)
+```
+
+### Visual Regression Flow
+1. Capture baseline screenshot
+2. Make changes
+3. Capture new screenshot
+4. Use Vision AI to compare and validate
 
 ## Validation Loop (MANDATORY)
 

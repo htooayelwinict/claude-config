@@ -1,11 +1,20 @@
 ---
 name: langgraph
 description: Expert guidance for building stateful, multi-actor AI agents with LangGraph - graphs, nodes, edges, state management, and agent architectures.
+allowed-tools: Read, Edit, Bash, Grep, mcp_context7
 ---
 
 # LangGraph Skill
 
 Use this skill when building stateful, cyclic AI agent workflows with LangGraph.
+
+## 📚 Documentation Lookup (Context7)
+
+Always verify patterns with latest docs:
+```
+mcp_context7_resolve-library-id(libraryName="langgraph", query="StateGraph conditional edges")
+mcp_context7_query-docs(libraryId="/langchain-ai/langgraph", query="checkpointer persistence")
+```
 
 ## Core Concepts
 

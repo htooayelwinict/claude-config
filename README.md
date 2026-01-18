@@ -26,7 +26,7 @@ This config provides a coordinated agent system for development tasks. It routes
 |---------|---------|-----------|
 | `/plan <feature>` | Create implementation plan with research + phases | planner |
 | `/code <plan-folder>` | Execute plan phase-by-phase with verification | fullstack-developer |
-| `/research <topic> [--plan <folder>]` | Research via Codex, save to plan/research/ | researcher |
+| `/research <topic> [--plan <folder>]` | Research via Gemini, save to plan/research/ | researcher |
 | `/docs [init\|update]` | Create/update project documentation | project-manager |
 | `/fix <issue>` | Diagnose and fix bugs | debugger |
 | `/review` | Code review | reviewer |
@@ -59,9 +59,9 @@ The following agents use MCP tools for enhanced capabilities:
 
 | Agent | MCP Tools | Purpose |
 |-------|-----------|---------|
-| **planner** | codex-bridge, context7 | Architecture analysis, up-to-date docs |
-| **researcher** | codex-bridge, context7 | Deep research, library documentation |
-| **brainstormer** | codex-bridge, context7 | Creative reasoning, best practices lookup |
+| **planner** | gemini-bridge, context7 | Architecture analysis, up-to-date docs |
+| **researcher** | gemini-bridge, context7 | Deep research, library documentation |
+| **brainstormer** | gemini-bridge, context7 | Creative reasoning, best practices lookup |
 | **fullstack-developer** | context7 | Latest API docs during implementation |
 | **database-admin** | context7 | ORM patterns, migration docs |
 | **ui-ux-designer** | context7, playwright, zai-mcp-server | Component docs, visual verification |
@@ -71,10 +71,10 @@ The following agents use MCP tools for enhanced capabilities:
 | **security-expert** | context7 | Security patterns, vulnerability fixes |
 | **devops-engineer** | context7 | Deployment configs, Docker patterns |
 
-### 🧠 Codex-Bridge (Brain)
+### 🧠 Gemini-Bridge (Brain)
 Deep reasoning and analysis for complex decisions:
 ```
-mcp_codex-bridge_consult_codex(query="...", directory=".")
+mcp_gemini-bridge_consult_gemini(query="...", directory=".")
 ```
 
 ### 📚 Context7 (Memory)

@@ -1,15 +1,21 @@
 ---
-description: Research a topic using Codex CLI/MCP and save to plan's research folder
+description: Research a topic using Gemini CLI/MCP and save to plan's research folder
 argument-hint: <topic> [--plan <plan-folder>]
-allowed-tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
+allowed-tools: Read, Bash, WebFetch, mcp_gemini-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 ---
+
+# Research Mode
+
+**Routes to:** `researcher` agent
+**Skill:** `research-and-synthesis`
+
 # Research Command
 
 Research the following topic: **$ARGUMENTS**
 
 ## Purpose
 
-Use Codex CLI to gather information about the requested topic and save findings to the appropriate research folder.
+Use Gemini CLI to gather information about the requested topic and save findings to the appropriate research folder.
 
 ## Usage Patterns
 
@@ -37,9 +43,9 @@ If no plan specified:
 
 ## Step 2: Use MCP Helpers for Research
 
-### 🧠 Codex-Bridge (Brain) — Deep Analysis
+### 🧠 Gemini-Bridge (Brain) — Deep Analysis
 ```
-mcp_codex-bridge_consult_codex(
+mcp_gemini-bridge_consult_gemini(
   query="Research the following topic for a Laravel 12 + React 19 + Inertia.js OR Python/FastAPI/LangChain project:
 
   Topic: $ARGUMENTS
@@ -128,11 +134,11 @@ Create research file with timestamp:
 - [Tutorial](url)
 - [Best Practices Guide](url)
 
-## Raw Codex Response
+## Raw Gemini Response
 <details>
 <summary>Full response</summary>
 
-[Full Codex CLI output]
+[Full Gemini CLI output]
 
 </details>
 ```
@@ -193,7 +199,7 @@ After MCP research, supplement with:
 
 ### Feature Research (PHP/Laravel)
 ```
-mcp_codex-bridge_consult_codex(
+mcp_gemini-bridge_consult_gemini(
   query="How to implement [feature] in Laravel 12 with React frontend using Inertia.js? Include security considerations and testing approach.",
   directory="."
 )
@@ -201,7 +207,7 @@ mcp_codex-bridge_consult_codex(
 
 ### Feature Research (Python)
 ```
-mcp_codex-bridge_consult_codex(
+mcp_gemini-bridge_consult_gemini(
   query="How to implement [feature] in FastAPI/LangChain? Include Pydantic models, async patterns, and pytest testing approach.",
   directory="."
 )
@@ -215,7 +221,7 @@ mcp_context7_query-docs(libraryId="/langchain-ai/langchain", query="[specific to
 
 ### Package Evaluation
 ```
-mcp_codex-bridge_consult_codex(
+mcp_gemini-bridge_consult_gemini(
   query="Compare [package1] vs [package2] for [use-case]. Include pros, cons, and recommendation.",
   directory="."
 )
@@ -223,7 +229,7 @@ mcp_codex-bridge_consult_codex(
 
 ### Security Research
 ```
-mcp_codex-bridge_consult_codex(
+mcp_gemini-bridge_consult_gemini(
   query="Security best practices for [feature] in web applications. Focus on [Laravel/FastAPI] backend and [React/Vue] frontend.",
   directory="."
 )
@@ -231,7 +237,7 @@ mcp_codex-bridge_consult_codex(
 
 ### Performance Research
 ```
-mcp_codex-bridge_consult_codex(
+mcp_gemini-bridge_consult_gemini(
   query="Performance optimization for [feature]. Include caching strategies, async patterns, and database optimization.",
   directory="."
 )
@@ -239,10 +245,10 @@ mcp_codex-bridge_consult_codex(
 
 ### Security Research
 ```bash
-codex "Security best practices for [feature] in web applications. Focus on Laravel/PHP backend and React frontend."
+gemini "Security best practices for [feature] in web applications. Focus on Laravel/PHP backend and React frontend."
 ```
 
 ### Performance Research
 ```bash
-codex "Performance optimization for [feature] in Laravel with React/Inertia. Include caching strategies and database optimization."
+gemini "Performance optimization for [feature] in Laravel with React/Inertia. Include caching strategies and database optimization."
 ```

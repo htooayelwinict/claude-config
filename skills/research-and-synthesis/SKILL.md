@@ -1,7 +1,7 @@
 ---
 name: research-and-synthesis
 description: Fetch and summarize authoritative external sources into actionable guidance using MCP helpers. EXCLUSIVE to researcher agent.
-allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_gemini-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 ---
 # Research and Synthesis
 
@@ -12,6 +12,14 @@ allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_gemini-bridge, mcp_context7
 ### 🧠 Gemini-Bridge (Brain) — Deep Analysis
 ```
 mcp_gemini-bridge_consult_gemini(
+  query="Research [topic] with pros/cons, security considerations, and code examples",
+  directory="."
+)
+```
+
+### 🌉 Open-Bridge — Alternative Deep Analysis
+```
+mcp_open-bridge_consult_gemini(
   query="Research [topic] with pros/cons, security considerations, and code examples",
   directory="."
 )

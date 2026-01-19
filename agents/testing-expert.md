@@ -5,7 +5,7 @@ description: |
   Triggers: "test", "TDD", "coverage", "Pest", "PHPUnit", "Vitest", "playwright", "e2e", "unit test", "feature test", "assertion", "pytest", "visual test", "screenshot".
   Use when: Tests need to be written, test coverage needs improvement, TDD approach requested, visual regression testing, or test infrastructure setup.
   Do NOT use for: Bug fixes (use debugger), feature implementation (use fullstack-developer), code review (use reviewer).
-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7, mcp_playwright, mcp_zai-mcp-server
+tools: Read, Edit, Bash, Grep, Glob, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_playwright, mcp_zai-mcp-server
 model: sonnet
 permissionMode: acceptEdits
 skills: testing

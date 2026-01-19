@@ -5,7 +5,7 @@ description: |
   Triggers: "review", "PR", "pull request", "check code", "quality", "before merge", "code audit", "look over", "sanity check".
   Use when: Code needs quality validation, before merging, after implementing a feature, or when checking security.
   Do NOT use for: Writing new code (use fullstack-developer), fixing bugs (use debugger), planning (use planner).
-tools: Read, Grep, Glob, Bash, mcp_context7
+tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 model: sonnet
 permissionMode: default
 skills: code-review-checklist

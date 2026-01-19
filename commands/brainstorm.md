@@ -3,7 +3,7 @@ description: |
   Brainstorm ideas, features, architecture decisions, or creative solutions. Advises only, does NOT implement.
   Examples: /brainstorm "new dashboard features", /brainstorm "auth architecture", /brainstorm "SaaS pricing"
 argument-hint: [topic, problem, or "new project"]
-allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 ---
 # Brainstorm Mode
 
@@ -21,6 +21,11 @@ $ARGUMENTS
 Use for complex analysis, architecture decisions, and creative problem-solving:
 ```
 mcp_gemini-bridge_consult_gemini(query="Analyze approaches for [topic] considering trade-offs...", directory=".")
+```
+
+### 🌉 Open-Bridge — Alternative Deep Reasoning
+```
+mcp_open-bridge_consult_gemini(query="Analyze approaches for [topic] considering trade-offs...", directory=".")
 ```
 
 ### 📚 Context7 (Memory) — Documentation Lookup

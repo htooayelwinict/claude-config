@@ -3,13 +3,25 @@ name: testing
 description: |
   Write and manage tests using TDD with Pest (PHP), Vitest (React), pytest (Python), and Playwright (E2E). Use when writing
   feature tests, unit tests, component tests, visual regression tests, or improving test coverage. EXCLUSIVE to testing-expert agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7, mcp_playwright, mcp_zai-mcp-server
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_playwright, mcp_zai-mcp-server
 ---
 # Testing
 
 **Exclusive to:** `testing-expert` agent
 
-## 📚 Context7 (Memory) — Up-to-Date Docs
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Gemini-Bridge (Brain) — Test Strategy Advice
+```
+mcp_gemini-bridge_consult_gemini(query="Suggest comprehensive test cases for: [feature]. Include edge cases.", directory=".")
+```
+
+### 🌉 Open-Bridge — Alternative Test Strategy
+```
+mcp_open-bridge_consult_gemini(query="Suggest comprehensive test cases for: [feature]. Include edge cases.", directory=".")
+```
+
+### 📚 Context7 (Memory) — Up-to-Date Docs
 
 Lookup testing patterns and assertions:
 ```

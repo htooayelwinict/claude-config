@@ -1,7 +1,7 @@
 ---
 description: Research a topic using Gemini CLI/MCP and save to plan's research folder
 argument-hint: <topic> [--plan <plan-folder>]
-allowed-tools: Read, Bash, WebFetch, mcp_gemini-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
+allowed-tools: Read, Bash, WebFetch, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 ---
 
 # Research Mode
@@ -46,6 +46,28 @@ If no plan specified:
 ### 🧠 Gemini-Bridge (Brain) — Deep Analysis
 ```
 mcp_gemini-bridge_consult_gemini(
+  query="Research the following topic for a Laravel 12 + React 19 + Inertia.js OR Python/FastAPI/LangChain project:
+
+  Topic: $ARGUMENTS
+
+  Provide:
+  1. Overview and key concepts
+  2. Best practices and patterns
+  3. Security considerations
+  4. Implementation approaches
+  5. Code examples (Laravel/React/Python where applicable)
+  6. Common pitfalls to avoid
+  7. Recommended packages/libraries
+  8. Official documentation links
+
+  Format as structured markdown.",
+  directory="."
+)
+```
+
+### 🌉 Open-Bridge — Alternative Deep Analysis
+```
+mcp_open-bridge_consult_gemini(
   query="Research the following topic for a Laravel 12 + React 19 + Inertia.js OR Python/FastAPI/LangChain project:
 
   Topic: $ARGUMENTS
@@ -199,7 +221,7 @@ After MCP research, supplement with:
 
 ### Feature Research (PHP/Laravel)
 ```
-mcp_gemini-bridge_consult_gemini(
+mcp_open-bridge_consult_gemini(
   query="How to implement [feature] in Laravel 12 with React frontend using Inertia.js? Include security considerations and testing approach.",
   directory="."
 )
@@ -207,7 +229,7 @@ mcp_gemini-bridge_consult_gemini(
 
 ### Feature Research (Python)
 ```
-mcp_gemini-bridge_consult_gemini(
+mcp_open-bridge_consult_gemini(
   query="How to implement [feature] in FastAPI/LangChain? Include Pydantic models, async patterns, and pytest testing approach.",
   directory="."
 )
@@ -221,7 +243,7 @@ mcp_context7_query-docs(libraryId="/langchain-ai/langchain", query="[specific to
 
 ### Package Evaluation
 ```
-mcp_gemini-bridge_consult_gemini(
+mcp_open-bridge_consult_gemini(
   query="Compare [package1] vs [package2] for [use-case]. Include pros, cons, and recommendation.",
   directory="."
 )
@@ -229,7 +251,7 @@ mcp_gemini-bridge_consult_gemini(
 
 ### Security Research
 ```
-mcp_gemini-bridge_consult_gemini(
+mcp_open-bridge_consult_gemini(
   query="Security best practices for [feature] in web applications. Focus on [Laravel/FastAPI] backend and [React/Vue] frontend.",
   directory="."
 )
@@ -237,7 +259,7 @@ mcp_gemini-bridge_consult_gemini(
 
 ### Performance Research
 ```
-mcp_gemini-bridge_consult_gemini(
+mcp_open-bridge_consult_gemini(
   query="Performance optimization for [feature]. Include caching strategies, async patterns, and database optimization.",
   directory="."
 )

@@ -3,13 +3,25 @@ name: bugfix-and-debug
 description: |
   Diagnose errors and failing tests in Laravel + React + Python applications. Use when encountering bugs, exceptions,
   stack traces, 500 errors, TypeErrors, failing tests, or unexpected behavior. EXCLUSIVE to debugger agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 ---
 # Bugfix and Debug
 
 **Exclusive to:** `debugger` agent
 
-## 📚 Context7 (Memory) — Up-to-Date Docs
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Gemini-Bridge (Brain) — Deep Error Analysis
+```
+mcp_gemini-bridge_consult_gemini(query="Root cause analysis: [error message]. Stack trace: [trace]", directory=".")
+```
+
+### 🌉 Open-Bridge — Alternative Error Analysis
+```
+mcp_open-bridge_consult_gemini(query="Root cause analysis: [error message]. Stack trace: [trace]", directory=".")
+```
+
+### 📚 Context7 (Memory) — Up-to-Date Docs
 
 Lookup error patterns and fixes in official docs:
 ```

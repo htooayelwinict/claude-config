@@ -3,7 +3,7 @@ description: |
   Create a structured implementation plan with research and phases.
   Examples: /plan user-authentication, /plan "add comments feature", /plan dashboard-redesign
 argument-hint: <feature-name>
-allowed-tools: Read, Edit, Bash, Write, mcp_gemini-bridge, mcp_context7
+allowed-tools: Read, Edit, Bash, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 ---
 # Plan Command
 
@@ -50,6 +50,14 @@ mkdir -p "plan/${PLAN_NAME}/research" "plan/${PLAN_NAME}/phases"
 ### 🧠 Gemini-Bridge (Brain) — Architecture Analysis
 ```
 mcp_gemini-bridge_consult_gemini(
+  query="Analyze architecture for [feature]: requirements, patterns, risks, phases...",
+  directory="."
+)
+```
+
+### 🌉 Open-Bridge — Alternative Architecture Analysis
+```
+mcp_open-bridge_consult_gemini(
   query="Analyze architecture for [feature]: requirements, patterns, risks, phases...",
   directory="."
 )

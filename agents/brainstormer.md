@@ -5,7 +5,7 @@ description: |
   Triggers: "brainstorm", "idea", "what if", "how might we", "suggest", "explore", "advise", "options", "pros and cons", "compare approaches".
   Use when: Multiple valid approaches exist, architecture decisions needed, evaluating trade-offs, or creative problem-solving required.
   Do NOT use for: Implementation (use fullstack-developer), planning concrete tasks (use planner), external research (use researcher).
-tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_context7
+tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 model: sonnet
 permissionMode: default
 skills: brainstorming

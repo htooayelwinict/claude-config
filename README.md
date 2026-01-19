@@ -53,32 +53,43 @@ This config provides a coordinated agent system for development tasks. It routes
 | **devops-engineer** | Sonnet | Infrastructure | deploy, docker, CI/CD |
 | **brainstormer** | Sonnet | Technical Advising | brainstorm, options, pros/cons |
 
-## MCP Helpers (Brain + Memory)
+## MCP Helpers (Brain + Memory + Web + Visual)
 
-The following agents use MCP tools for enhanced capabilities:
+All 9 MCP servers organized by purpose:
 
-| Agent | MCP Tools | Purpose |
-|-------|-----------|---------|
-| **planner** | gemini-bridge, context7 | Architecture analysis, up-to-date docs |
-| **researcher** | gemini-bridge, context7 | Deep research, library documentation |
-| **brainstormer** | gemini-bridge, context7 | Creative reasoning, best practices lookup |
-| **fullstack-developer** | context7 | Latest API docs during implementation |
-| **database-admin** | context7 | ORM patterns, migration docs |
-| **ui-ux-designer** | context7, playwright, zai-mcp-server | Component docs, visual verification |
-| **debugger** | context7 | Error patterns, fixes from official docs |
-| **testing-expert** | context7, playwright, zai-mcp-server | Testing patterns, visual regression |
-| **reviewer** | context7 | Best practices validation |
-| **security-expert** | context7 | Security patterns, vulnerability fixes |
-| **devops-engineer** | context7 | Deployment configs, Docker patterns |
+### MCP Categories
 
-### 🧠 Gemini-Bridge (Brain)
-Deep reasoning and analysis for complex decisions:
+| Category | MCPs | Purpose |
+|----------|------|---------|
+| **🧠 Brain** | gemini-bridge, open-bridge, codex-bridge | Deep reasoning, code analysis |
+| **📚 Memory** | context7 | Up-to-date library documentation |
+| **🌐 Web** | web-search-prime, web-reader, zread | Live web research |
+| **🖼️ Visual** | playwright, zai-mcp-server | Browser automation, vision AI |
+
+### Agent MCP Assignments
+
+| Agent | Brain | Memory | Web | Visual |
+|-------|-------|--------|-----|--------|
+| **planner** | ✓ | ✓ | | |
+| **researcher** | ✓ | ✓ | ✓ | |
+| **brainstormer** | ✓ | ✓ | | |
+| **debugger** | ✓ | ✓ | search | |
+| **testing-expert** | ✓ | ✓ | | ✓ |
+| **reviewer** | ✓ | ✓ | | |
+| **security-expert** | ✓ | ✓ | search | |
+| **fullstack-developer** | | ✓ | | |
+| **ui-ux-designer** | | ✓ | | ✓ |
+| **database-admin** | | ✓ | | |
+| **devops-engineer** | | ✓ | search | |
+
+### 🧠 Brain MCPs — Deep Reasoning
 ```
 mcp_gemini-bridge_consult_gemini(query="...", directory=".")
+mcp_open-bridge_consult_gemini(query="...", directory=".")
+mcp_codex-bridge_consult_codex(query="...", directory=".")
 ```
 
-### 📚 Context7 (Memory)
-Up-to-date library documentation:
+### 📚 Memory — Documentation
 ```
 mcp_context7_resolve-library-id(libraryName="react", query="...")
 mcp_context7_query-docs(libraryId="/vercel/react", query="...")

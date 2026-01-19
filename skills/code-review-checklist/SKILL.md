@@ -3,13 +3,30 @@ name: code-review-checklist
 description: |
   Review code changes for correctness, security, performance, and maintainability. Use for PR reviews,
   code audits, pre-merge checks, or quality validation of Laravel + React + Python code. EXCLUSIVE to reviewer agent.
-allowed-tools: Read, Grep, Glob, Bash, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 ---
 # Code Review Checklist
 
 **Exclusive to:** `reviewer` agent
 
-## 📚 Context7 (Memory) — Up-to-Date Docs
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Gemini-Bridge — Deep Code Analysis
+```
+mcp_gemini-bridge_consult_gemini(query="Review this code for best practices, security, and performance: [code snippet]", directory=".")
+```
+
+### 🌉 Open-Bridge — Alternative Analysis
+```
+mcp_open-bridge_consult_gemini(query="Review this code for best practices, security, and performance: [code snippet]", directory=".")
+```
+
+### 💻 Codex-Bridge — Code-Focused Review
+```
+mcp_codex-bridge_consult_codex(query="Analyze this code for bugs, anti-patterns, and improvements: [code]", directory=".")
+```
+
+### 📚 Context7 (Memory) — Up-to-Date Docs
 
 Lookup best practices and anti-patterns:
 ```

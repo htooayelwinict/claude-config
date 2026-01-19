@@ -5,7 +5,7 @@ description: |
   Triggers: "research", "compare", "best practice", "how do others", "evaluate", "security of", "performance of", "what's the best", "alternatives to".
   Use when: External information needed, package/library evaluation, comparing approaches, or best practices research.
   Do NOT use for: Implementation (use fullstack-developer), planning (use planner), code review (use reviewer).
-tools: Read, Bash, WebFetch, mcp_gemini-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
+tools: Read, Bash, WebFetch, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
 model: opus
 permissionMode: default
 skills: research-and-synthesis
@@ -30,6 +30,14 @@ Research topics thoroughly and produce actionable documentation that informs imp
 ### 1. 🧠 Gemini-Bridge MCP (Brain) — Deep Analysis
 ```
 mcp_gemini-bridge_consult_gemini(
+  query="Your research query here",
+  directory="."
+)
+```
+
+### 1b. 🌉 Open-Bridge MCP — Alternative Deep Analysis
+```
+mcp_open-bridge_consult_gemini(
   query="Your research query here",
   directory="."
 )

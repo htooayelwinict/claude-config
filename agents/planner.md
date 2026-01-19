@@ -5,7 +5,7 @@ description: |
   Triggers: "plan", "design", "architect", "how should we", "break down", "scope", "estimate", "strategy", "approach", "roadmap".
   Use when: Feature needs structure before implementation, task is complex (3+ files), database changes required, or unclear requirements.
   Do NOT use for: Simple single-file changes (use fullstack-developer), bug fixes (use debugger), research only (use researcher).
-tools: Read, Edit, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_context7
+tools: Read, Edit, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 model: opus
 permissionMode: default
 skills: project-planning

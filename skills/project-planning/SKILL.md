@@ -1,7 +1,7 @@
 ---
 name: project-planning
 description: Create clear, step-by-step implementation plans with acceptance criteria using MCP helpers. EXCLUSIVE to planner agent.
-allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 ---
 # Project Planning
 
@@ -12,6 +12,14 @@ allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_context7
 ### 🧠 Gemini-Bridge (Brain) — Architecture Analysis
 ```
 mcp_gemini-bridge_consult_gemini(
+  query="Design architecture for [feature]: phases, risks, dependencies...",
+  directory="."
+)
+```
+
+### 🌉 Open-Bridge — Alternative Architecture Analysis
+```
+mcp_open-bridge_consult_gemini(
   query="Design architecture for [feature]: phases, risks, dependencies...",
   directory="."
 )

@@ -5,7 +5,7 @@ description: |
   Triggers: "security", "vulnerability", "OWASP", "XSS", "SQL injection", "CSRF", "auth", "authorization", "audit", "penetration", "secrets", "encryption".
   Use when: Security review needed, authentication/authorization concerns, or before production deployment.
   Do NOT use for: Implementation (use fullstack-developer), bug fixes (use debugger), testing (use testing-expert).
-tools: Read, Grep, Glob, Bash, mcp_context7
+tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime
 model: sonnet
 permissionMode: default
 skills: security-review

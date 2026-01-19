@@ -3,7 +3,7 @@ description: |
   Debug and fix bugs, errors, or failing tests with minimal, targeted changes.
   Examples: /fix "500 error on login", /fix PostTest, /fix "TypeError in dashboard"
 argument-hint: [error message or bug description]
-allowed-tools: Read, Grep, Glob, Edit, Write, Bash
+allowed-tools: Read, Grep, Glob, Edit, Write, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
 ---
 # Fix Mode
 
@@ -14,6 +14,24 @@ allowed-tools: Read, Grep, Glob, Edit, Write, Bash
 
 ## Problem
 **$ARGUMENTS**
+
+## MCP Helpers (Brain + Memory)
+
+### 🧠 Gemini-Bridge (Brain) — Deep Error Analysis
+```
+mcp_gemini-bridge_consult_gemini(query="Analyze this error and suggest root cause: [error message]. Stack trace: [trace]", directory=".")
+```
+
+### 🌉 Open-Bridge — Alternative Error Analysis
+```
+mcp_open-bridge_consult_gemini(query="Analyze this error and suggest root cause: [error message]. Stack trace: [trace]", directory=".")
+```
+
+### 📚 Context7 (Memory) — Framework Error Patterns
+```
+mcp_context7_resolve-library-id(libraryName="[framework]", query="[error type]")
+mcp_context7_query-docs(libraryId="/[resolved-id]", query="[specific error]")
+```
 
 ## Debugging Process
 

@@ -3,18 +3,40 @@ name: security-review
 description: |
   Audit code for security vulnerabilities using OWASP Top 10 guidelines. Use for security audits, pre-deployment
   checks, authentication reviews, or when checking for XSS, SQL injection, CSRF, or authorization issues. EXCLUSIVE to security-expert agent.
-allowed-tools: Read, Grep, Glob, Bash, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime
 ---
 # Security Review
 
 **Exclusive to:** `security-expert` agent
 
-## 📚 Context7 (Memory) — Up-to-Date Docs
+## MCP Helpers (Brain + Memory + Web)
+
+### 🧠 Gemini-Bridge — Security Analysis
+```
+mcp_gemini-bridge_consult_gemini(query="Security audit this code for OWASP vulnerabilities: [code snippet]", directory=".")
+```
+
+### 🌉 Open-Bridge — Alternative Security Analysis
+```
+mcp_open-bridge_consult_gemini(query="Security audit this code for OWASP vulnerabilities: [code snippet]", directory=".")
+```
+
+### 💻 Codex-Bridge — Code Security Review
+```
+mcp_codex-bridge_consult_codex(query="Find security vulnerabilities in: [code]", directory=".")
+```
+
+### 📚 Context7 (Memory) — Up-to-Date Docs
 
 Lookup security patterns and vulnerability mitigations:
 ```
 mcp_context7_resolve-library-id(libraryName="laravel", query="csrf protection")
 mcp_context7_query-docs(libraryId="/laravel/docs", query="authentication security")
+```
+
+### 🌐 Web Search — CVE and Vulnerability Lookup
+```
+mcp_web-search-prime_search(query="[package name] CVE vulnerability 2025")
 ```
 
 ## Validation Loop (MANDATORY)

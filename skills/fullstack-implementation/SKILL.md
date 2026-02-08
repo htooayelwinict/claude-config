@@ -23,6 +23,14 @@ mcp_context7_query-docs(libraryId="/[resolved-id]", query="[specific API]")
 - FastAPI dependencies, Pydantic models
 - LangChain chains, agents, tools
 
+## 💻 Codex-Bridge — Code Implementation Helper
+```
+mcp_codex-bridge_consult_codex(
+  query="Generate a Laravel controller for [feature] or React component for [UI]",
+  directory="."
+)
+```
+
 ## Validation Loop (MANDATORY)
 
 Before completing ANY implementation, run this verification sequence:

@@ -44,6 +44,7 @@ Gather information from:
 - External sources if needed
 - Other agents' expertise
 - **🧠 Gemini-Bridge** for deep reasoning and analysis
+- **💻 Codex-Bridge** for code-specific analysis and patterns
 - **📚 Context7** for up-to-date library documentation
 
 ### Phase 3: Analysis

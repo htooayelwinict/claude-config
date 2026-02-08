@@ -23,6 +23,11 @@ mcp_gemini-bridge_consult_gemini(query="Analyze this error and root cause: [erro
 mcp_open-bridge_consult_gemini(query="Analyze this error and root cause: [error]. Suggest fix strategies.", directory=".")
 ```
 
+### 💻 Codex-Bridge — Code Fix Suggestions
+```
+mcp_codex-bridge_consult_codex(query="Propose a fix for this code snippet: [code]", directory=".")
+```
+
 ### 📚 Context7 — Lookup Error Solutions
 ```
 mcp_context7_query-docs(libraryId="/langchain-ai/langgraph", query="common errors StateGraph")

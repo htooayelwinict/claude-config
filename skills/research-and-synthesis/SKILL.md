@@ -25,6 +25,14 @@ mcp_open-bridge_consult_gemini(
 )
 ```
 
+### 💻 Codex-Bridge — Code Analysis
+```
+mcp_codex-bridge_consult_codex(
+  query="Analyze code patterns for [topic]",
+  directory="."
+)
+```
+
 ### 📚 Context7 (Memory) — Up-to-Date Docs
 ```
 # Resolve library first

@@ -1,36 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(./vendor/bin/pint:*)",
-      "Bash(composer test:*)",
-      "WebFetch(domain:github.com)",
-      "Bash(mkdir:*)",
-      "Bash(npm run types:*)",
-      "Bash(npm run lint)",
-      "Bash(grep:*)",
-      "Bash(php artisan:*)",
-      "Bash(sqlite3:*)",
-      "Bash(npm install:*)",
-      "Bash(find:*)",
-      "Bash(npm run lint:*)",
-      "Bash(python3:*)",
-      "Bash(gh issue close:*)",
-      "Bash(gh issue list:*)",
-      "Bash(npm run test:*)",
-      "Bash(npm run test:run:*)",
-      "mcp__zai-mcp-server__analyze_image",
-      "mcp__playwright__*",
-      "mcp__context7__*",
-      "mcp__gemini-bridge__*",
-      "mcp__open-bridge__*",
-      "mcp__codex-bridge__*",
-      "mcp__web-search-prime__*",
-      "mcp__web-reader__*",
-      "mcp__zread__*",
-      "Skill(project-planning)",
-      "Skill(project-planning:*)",
-      "Skill(plan)",
-      "Skill(plan:*)"
+      "mcp__gemini-bridge__consult_gemini",
+      "mcp__open-bridge__consult_openrouter",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "mcp__web-reader__webReader",
+      "mcp__web-search-prime__webSearchPrime",
+      "mcp__codex-bridge__consult_codex",
+      "mcp__codex-bridge__consult_codex_batch",
+      "mcp__codex-bridge__consult_codex_with_stdin",
+      "Bash(scalene:*)",
+      "Bash(froq-docker:*)",
+      "Bash(python3:*)"
     ]
   }
 }

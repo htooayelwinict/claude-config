@@ -43,6 +43,14 @@ mcp_open-bridge_consult_gemini(
 )
 ```
 
+### 1c. 💻 Codex-Bridge MCP — Code Analysis & Generation
+```
+mcp_codex-bridge_consult_codex(
+  query="Analyze this code pattern or generate implementation details",
+  directory="."
+)
+```
+
 Use for:
 - Technology comparisons
 - Best practices

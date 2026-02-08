@@ -5,7 +5,7 @@ description: |
   Triggers: "implement", "build", "create", "add feature", "write code", "update", "add", "wire up", "connect", "integrate".
   Use when: User wants working code written, a plan needs to be executed, or a feature needs to be built end-to-end.
   Do NOT use for: Planning (use planner), debugging (use debugger), testing only (use testing-expert), UI/UX design (use ui-ux-designer).
-tools: Read, Grep, Glob, Edit, Write, Bash, mcp_context7
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_context7, mcp_codex-bridge
 model: sonnet
 permissionMode: acceptEdits
 skills: fullstack-implementation

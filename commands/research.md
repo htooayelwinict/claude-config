@@ -1,7 +1,7 @@
 ---
 description: Research a topic using Gemini CLI/MCP and save to plan's research folder
 argument-hint: <topic> [--plan <plan-folder>]
-allowed-tools: Read, Bash, WebFetch, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime, mcp_web-reader, mcp_zread
+allowed-tools: Read, Bash, WebFetch, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 
 # Research Mode

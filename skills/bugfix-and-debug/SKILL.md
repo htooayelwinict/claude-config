@@ -3,7 +3,7 @@ name: bugfix-and-debug
 description: |
   Diagnose errors and failing tests in Laravel + React + Python applications. Use when encountering bugs, exceptions,
   stack traces, 500 errors, TypeErrors, failing tests, or unexpected behavior. EXCLUSIVE to debugger agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Bugfix and Debug
 

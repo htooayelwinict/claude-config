@@ -3,7 +3,7 @@ description: |
   Run, write, and fix tests using TDD approach with Pest/Vitest/Playwright.
   Examples: /test, /test PostTest, /test "all", /test "coverage"
 argument-hint: [test file, pattern, or "all"]
-allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_playwright, mcp_zai-mcp-server
+allowed-tools: Read, Edit, Bash, Grep, Glob, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Test Mode
 

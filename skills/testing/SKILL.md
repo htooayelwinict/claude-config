@@ -3,7 +3,7 @@ name: testing
 description: |
   Write and manage tests using TDD with Pest (PHP), Vitest (React), pytest (Python), and Playwright (E2E). Use when writing
   feature tests, unit tests, component tests, visual regression tests, or improving test coverage. EXCLUSIVE to testing-expert agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_playwright, mcp_zai-mcp-server
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Testing
 

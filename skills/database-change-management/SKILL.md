@@ -3,7 +3,7 @@ name: database-change-management
 description: |
   Plan and implement safe database schema changes including migrations, indexes, and backfills. Use when creating
   tables, adding columns, optimizing queries, or managing Eloquent/SQLAlchemy relationships. EXCLUSIVE to database-admin agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Database Change Management
 

@@ -3,7 +3,7 @@ description: |
   Debug and fix bugs, errors, or failing tests with minimal, targeted changes.
   Examples: /fix "500 error on login", /fix PostTest, /fix "TypeError in dashboard"
 argument-hint: [error message or bug description]
-allowed-tools: Read, Grep, Glob, Edit, Write, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Edit, Write, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Fix Mode
 

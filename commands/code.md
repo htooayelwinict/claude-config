@@ -3,7 +3,7 @@ description: |
   Implement code based on a generated plan. Execute phases in order with verification.
   Examples: /code plan/user-auth-20241214, /code plan/comments --phase 1
 argument-hint: <plan-folder-path> [--phase <N>]
-allowed-tools: Read, Edit, Bash, WebFetch, Write, Grep, Glob, mcp_context7
+allowed-tools: Read, Edit, Bash, WebFetch, Write, Grep, Glob, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Code Command
 

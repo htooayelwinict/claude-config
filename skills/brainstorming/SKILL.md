@@ -1,7 +1,7 @@
 ---
 name: brainstorming
 description: Brainstorm and advise on technical decisions using structured process and MCP helpers. EXCLUSIVE to brainstormer agent. Does NOT implement — only advises.
-allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Brainstorming
 

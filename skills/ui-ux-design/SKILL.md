@@ -1,7 +1,7 @@
 ---
 name: ui-ux-design
 description: Design and implement UI/UX changes using existing components and Tailwind tokens; ensure accessibility. EXCLUSIVE to ui-ux-designer agent.
-allowed-tools: Read, Edit, Grep, Glob, Write, mcp_context7, mcp_playwright, mcp_zai-mcp-server
+allowed-tools: Read, Edit, Grep, Glob, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # UI/UX Design
 

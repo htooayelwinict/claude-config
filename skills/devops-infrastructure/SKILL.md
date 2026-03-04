@@ -1,7 +1,7 @@
 ---
 name: devops-infrastructure
 description: Manage deployment, Docker, CI/CD, server hardening, and infrastructure security. EXCLUSIVE to devops-engineer agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # DevOps Infrastructure
 

@@ -5,7 +5,7 @@ description: |
   Triggers: "bug", "error", "fix", "debug", "broken", "not working", "issue", "crash", "exception".
   Use when: Something is broken and needs to be fixed, error investigation, or root cause analysis.
   Do NOT use for: New features (use fullstack-developer), planning (use planner), testing (use testing-expert).
-tools: Read, Grep, Glob, Edit, Write, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 model: inherit
 ---
 

@@ -5,7 +5,7 @@ description: |
   Triggers: "organize", "coordinate", "break down", "scope", "update docs", "status", "what's next", "prioritize", "roadmap".
   Use when: Work spans multiple domains, task decomposition needed, documentation sync required, or agent handoffs.
   Do NOT use for: Single-domain implementation (route to appropriate specialist instead).
-tools: Read, Grep, Glob, Edit, Write, Bash
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 model: sonnet
 permissionMode: acceptEdits
 skills: project-orchestration, documentation-management

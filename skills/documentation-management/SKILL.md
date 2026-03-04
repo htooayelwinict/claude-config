@@ -1,7 +1,7 @@
 ---
 name: documentation-management
 description: Keep project documentation accurate when behavior changes. EXCLUSIVE to project-manager agent.
-allowed-tools: Read, Edit, Write, Grep
+allowed-tools: Read, Edit, Write, Grep, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Documentation Management
 

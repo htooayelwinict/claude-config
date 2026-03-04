@@ -3,7 +3,7 @@ description: |
   Security audit using OWASP Top 10 guidelines for Laravel + React applications.
   Examples: /security, /security "auth flow", /security app/Http/Controllers
 argument-hint: [optional: specific area or file to review]
-allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime
+allowed-tools: Read, Grep, Glob, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Security Review
 

@@ -3,7 +3,7 @@ description: |
   Deploy, configure Docker, CI/CD, or manage infrastructure. Includes server hardening.
   Examples: /deploy "docker setup", /deploy "github actions", /deploy "harden server"
 argument-hint: [deploy, docker, ci/cd, or infrastructure task]
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Deploy Mode
 

@@ -3,7 +3,7 @@ name: security-review
 description: |
   Audit code for security vulnerabilities using OWASP Top 10 guidelines. Use for security audits, pre-deployment
   checks, authentication reviews, or when checking for XSS, SQL injection, CSRF, or authorization issues. EXCLUSIVE to security-expert agent.
-allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7, mcp_web-search-prime
+allowed-tools: Read, Grep, Glob, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Security Review
 

@@ -1,7 +1,7 @@
 ---
 name: project-orchestration
 description: Coordinate multiple agents by routing tasks to appropriate specialists. EXCLUSIVE to project-manager agent.
-allowed-tools: Read, Grep, Glob, Edit, Write
+allowed-tools: Read, Grep, Glob, Edit, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Project Orchestration
 

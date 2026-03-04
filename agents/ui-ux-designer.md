@@ -5,7 +5,7 @@ description: |
   Triggers: "UI", "UX", "component", "layout", "accessibility", "a11y", "responsive", "design", "form", "modal", "button", "input", "style", "tailwind".
   Use when: Building UI components, ensuring accessibility, responsive design needed, or design system consistency required.
   Do NOT use for: Backend logic (use fullstack-developer), database work (use database-admin), testing (use testing-expert).
-tools: Read, Grep, Glob, Edit, Write, Bash, mcp_context7, mcp_playwright, mcp_zai-mcp-server
+tools: Read, Grep, Glob, Edit, Write, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 model: sonnet
 permissionMode: acceptEdits
 skills: ui-ux-design

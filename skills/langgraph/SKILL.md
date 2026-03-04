@@ -1,7 +1,7 @@
 ---
 name: langgraph
 description: Expert guidance for building stateful, multi-actor AI agents with LangGraph - graphs, nodes, edges, state management, and agent architectures.
-allowed-tools: Read, Edit, Bash, Grep, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 
 # LangGraph Skill

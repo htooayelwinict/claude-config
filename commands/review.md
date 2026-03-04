@@ -3,7 +3,7 @@ description: |
   Review code for quality, security, and correctness. Use before commits or merges.
   Examples: /review, /review "auth changes", /review "performance"
 argument-hint: [optional: specific focus area]
-allowed-tools: Bash(git:*), Read, Grep, Glob, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Bash(git:*), Read, Grep, Glob, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Code Review Mode
 

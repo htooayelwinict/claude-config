@@ -3,7 +3,7 @@ description: |
   Brainstorm ideas, features, architecture decisions, or creative solutions. Advises only, does NOT implement.
   Examples: /brainstorm "new dashboard features", /brainstorm "auth architecture", /brainstorm "SaaS pricing"
 argument-hint: [topic, problem, or "new project"]
-allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Brainstorm Mode
 

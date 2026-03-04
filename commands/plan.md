@@ -3,7 +3,7 @@ description: |
   Create a structured implementation plan with research and phases.
   Examples: /plan user-authentication, /plan "add comments feature", /plan dashboard-redesign
 argument-hint: <feature-name>
-allowed-tools: Read, Edit, Bash, Write, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Edit, Bash, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Plan Command
 

@@ -1,7 +1,7 @@
 ---
 description: ⚡⚡⚡⚡ Analyze the codebase and create/update documentation
 argument-hint: <init|update|summarize> [target]
-allowed-tools: Read, Edit, Bash, mcp_context7
+allowed-tools: Read, Edit, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Documentation Command
 

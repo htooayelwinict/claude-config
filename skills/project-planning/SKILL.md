@@ -1,7 +1,7 @@
 ---
 name: project-planning
 description: Create clear, step-by-step implementation plans with acceptance criteria using MCP helpers. EXCLUSIVE to planner agent.
-allowed-tools: Read, Grep, Glob, Bash, mcp_gemini-bridge, mcp_open-bridge, mcp_codex-bridge, mcp_context7
+allowed-tools: Read, Grep, Glob, Bash, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Project Planning
 

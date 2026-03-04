@@ -3,7 +3,7 @@ name: fullstack-implementation
 description: |
   Implement features end-to-end in Laravel 12 + Inertia.js + React 19 + TypeScript OR Python + FastAPI + LangChain. Use when building
   new features, wiring controllers to pages, or implementing CRUD operations. EXCLUSIVE to fullstack-developer agent.
-allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, Glob, Write, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 # Fullstack Implementation
 

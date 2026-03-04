@@ -1,7 +1,7 @@
 ---
 name: langchain
 description: Expert guidance for building LLM applications with LangChain framework - chains, prompts, memory, retrievers, and integrations.
-allowed-tools: Read, Edit, Bash, Grep, mcp_context7
+allowed-tools: Read, Edit, Bash, Grep, mcp_codex-bridge, mcp_gemini-bridge, mcp_context7, mcp_playwright, mcp_zread, mcp_web-search-prime, mcp_web-reader, mcp_zai-mcp-server, mcp_open-bridge
 ---
 
 # LangChain Skill
